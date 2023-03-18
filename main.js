@@ -19,3 +19,19 @@ button.addEventListener("click", function() {
 
 }
 
+function osszeallit(){
+    //összeállítjuk azt a szöveget tartalmat, ami a HTML kódot jelenti 
+let i=0;
+for (let index = 0; index < kutyaLista.length; index++) {
+    txt+=` 
+<div>
+    <p>
+    ${kutyaLista[index]}
+    </p>
+    
+</div>`
+    
+}
+console.log(txt);
+return txt
+}
